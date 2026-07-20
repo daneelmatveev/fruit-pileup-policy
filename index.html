@@ -2,11 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Политика конфиденциальности</title>
     <style>
         pre {
-            white-space: pre-wrap;
-            word-break: break-word;
+            white-space: pre-wrap;          /* сохраняем переносы строк и пробелы, но разрешаем перенос */
+            overflow-wrap: break-word;      /* главное: переносить длинные слова и ссылки */
+            word-break: break-word;         /* запасной вариант для старых браузеров */
+            max-width: 100%;                /* не шире родителя */
+            overflow-x: hidden;             /* на всякий случай скрываем возможный скролл */
         }
     </style>
 </head>
